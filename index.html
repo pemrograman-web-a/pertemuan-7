@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Form AJAX</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container" style="max-width: 640px; margin-top: 30px">
+      <div class="card contact-card">
+        <div class="card-body">
+          <h4 class="card-title mb-2">Contact Us</h4>
+          <p class="required-note">
+            Isi form berikut untuk menghubungi kami. Semua field wajib diisi.
+          </p>
+          <form id="ContactForm" method="post" novalidate>
+            <div class="mb-3">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-label="name" />
+            </div>
+            <div class="mb-3">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-label="email" />
+            </div>
+            <div class="mb-3">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                class="form-control"
+                rows="4"
+                aria-label="message"></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="btn btn-primary">
+              Send Message
+            </button>
+          </form>
+
+          <div class="message_box" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
